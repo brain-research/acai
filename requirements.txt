@@ -1,0 +1,15 @@
+ipython==5.0
+six
+matplotlib
+jupyter
+Pillow
+numpy
+absl-py
+scipy
+scikit-learn
+bleach==1.5.0
+tensorflow-gpu==1.8.0
+tmuxp
+requests
+googledrivedownloader
+tqdm
