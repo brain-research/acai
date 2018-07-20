@@ -1,6 +1,6 @@
 # Adversarially Constrained Autoencoder Interpolations (ACAI)
 
-Official code repository. Tensorflow 1.6 / Python 2.7 implementation.
+Code for the paper "[Understanding and Improving Interpolation in Autoencoders via an Adversarial Regularizer](http://arxiv.org/abs/1807.07543)" by David Berthelot, Colin Raffel, Aurko Roy, and Ian Goodfellow.
 
 This is not an officially supported Google product.
 
