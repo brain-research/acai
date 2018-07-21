@@ -15,6 +15,7 @@
 #!/usr/bin/env python
 """Script to download all datasets and create .tfrecord files.
 """
+from __future__ import print_function
 
 import collections
 import gzip
@@ -150,7 +151,7 @@ def _bytes_feature(value):
 def _save_as_tfrecord(data, filename):
     assert len(data['images']) == len(data['labels'])
     filename = os.path.join(DATA_DIR, filename + '.tfrecord')
-    print 'Saving dataset:', filename
+    print('Saving dataset:', filename)
     with tf.python_io.TFRecordWriter(filename) as writer:
         for x in trange(len(data['images']), desc='Building records'):
             feat = dict(label=_int64_feature(data['labels'][x]),
@@ -172,7 +173,7 @@ if __name__ == '__main__':
     except OSError:
         pass
     for name, loader in LOADERS:
-        print 'Preparing', name
+        print('Preparing', name)
         datas = loader()
         for sub_name, data in datas.items():
             _save_as_tfrecord(data, '%s-%s' % (name, sub_name))
