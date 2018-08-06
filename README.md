@@ -61,3 +61,6 @@ These are the maintained models:
 
 - create_datasets.py: see Installing datsets for more info.
 
+## Unofficial implementations
+
+- Kyle McDonald created a Pytorch version of ACAI [here](https://gist.github.com/kylemcdonald/e8ca989584b3b0e6526c0a737ed412f0).
